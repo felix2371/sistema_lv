@@ -21,9 +21,11 @@ app.get('/',(req,res)=>{
         dominio_raiz : rootDomain,
         atualização: '14/09/2024 - 18:42',
         rotas:{
-            'GET - Consultar veículo': `${rootDomain}/api/veiculo`,
+             'GET - Consultar veículo por ID': `${rootDomain}/api/veiculo/{id}`,
             'GET - Consultar todos os veículos': `${rootDomain}/api/veiculos`,
-            'POST - Cadastrar veículo':`${rootDomain}/api/veiculo`
+            'POST - Cadastrar veículo':`${rootDomain}/api/veiculo`,
+            'PUT - Editar veículo': `${rootDomain}/api/veiculo/{id}`,
+            'DELETE - Deletar veículo': `${rootDomain}/api/veiculo/{id}`
         }
     });
 });
